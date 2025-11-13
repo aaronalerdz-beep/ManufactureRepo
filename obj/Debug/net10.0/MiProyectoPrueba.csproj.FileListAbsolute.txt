@@ -1,0 +1,14 @@
+D:\dotnet\miproyectoprueba\bin\Debug\net10.0\MiProyectoPrueba.exe
+D:\dotnet\miproyectoprueba\bin\Debug\net10.0\MiProyectoPrueba.deps.json
+D:\dotnet\miproyectoprueba\bin\Debug\net10.0\MiProyectoPrueba.runtimeconfig.json
+D:\dotnet\miproyectoprueba\bin\Debug\net10.0\MiProyectoPrueba.dll
+D:\dotnet\miproyectoprueba\bin\Debug\net10.0\MiProyectoPrueba.pdb
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\MiProyectoPrueba.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\MiProyectoPrueba.AssemblyInfoInputs.cache
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\MiProyectoPrueba.AssemblyInfo.cs
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\MiProyectoPrueba.csproj.CoreCompileInputs.cache
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\MiProyectoPrueba.dll
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\refint\MiProyectoPrueba.dll
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\MiProyectoPrueba.pdb
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\MiProyectoPrueba.genruntimeconfig.cache
+D:\dotnet\miproyectoprueba\obj\Debug\net10.0\ref\MiProyectoPrueba.dll

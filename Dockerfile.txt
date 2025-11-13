@@ -1,0 +1,27 @@
+# 1. ETAPA DE CONSTRUCCIÓN (BUILD)
+# Usa la imagen SDK para compilar la aplicación. Es grande, pero tiene todas las herramientas necesarias.
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+# Copia el archivo de proyecto y restaura las dependencias
+COPY ["MiProyectoPrebas.csproj", "."]
+RUN dotnet restore "MiProyectoPruebas.csproj"
+
+# Copia el resto del código fuente
+COPY . .
+
+# Compila y publica la aplicación
+# Publica la aplicación en modo "Release" en el directorio /app/publish
+RUN dotnet publish "MiProyectoPruebas.csproj" -c Release -o /app/publish --no-restore
+
+# 2. ETAPA FINAL (FINAL)
+# Usa una imagen Runtime más pequeña y segura para ejecutar la aplicación.
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+WORKDIR /app
+
+# Copia solo los archivos publicados de la etapa "build"
+COPY --from=build /app/publish .
+
+# Define el punto de entrada de la aplicación
+# Reemplaza 'MiProyectoPruebas.dll' con el nombre de tu DLL compilada.
+ENTRYPOINT ["dotnet", "MiProyectoPruebas.dll"]
